@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+<style>
+  body{
+    margin:0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+  }
+  .card{
+    background:white;
+    color:#333;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  }
+  h1{margin:0; font-size:32px;}
+  p{color:#666;}
+  button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+  }
+  button:hover{background:#764ba2;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to My First Website 👋</h1>
+    <p>Hi, I'm Lakshmi. This is my first project on GitHub.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
+  </div>
+
+<script>
+  function showMessage(){
+    document.getElementById("msg").innerHTML = "🎉 Thank you for visiting! Built with Copilot ❤️";
+  }
+</script>
+</body>
+</html>
